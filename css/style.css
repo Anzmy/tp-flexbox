@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+header {
+    height: 60px;
+    background-color: rgba(18, 18, 18, 0.9);
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+header h1 {
+    letter-spacing: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+footer {
+    height: 60px;
+    background-color: rgba(18, 18, 18, 0.9);
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+footer h2 {
+    letter-spacing: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+aside {
+    width: 23%;
+    background-color: rgb(214, 179, 103);
+}
+
+.container-page {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.container-pics {
+    padding: 5%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+}
+
+.container-middle {
+    padding: 5% 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+    background-color: #b47832;
+}
+
+.container-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+}
+
+.container-list {
+    padding: 5% 2rem;
+    width: 20%;
+}
+
+.container-list ul {
+    margin-bottom: 5rem;
+    height: 150px;
+}
+
+.container-list ul:nth-child(:last-child){
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1422px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 1278px) {
+    .container-middle {
+        order: -1;
+    }
+
+    .container-pics {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0.5rem;
+    }
+
+    .container-middle  {
+        width: 100%;
+        padding: 2rem 10%;
+    }
+
+    .container-list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0.5rem;
+    }
+
+    .container-list ul {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .container-pics {
+        flex-direction: column;
+    }
+
+    .container-pics img {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .container-list {
+        flex-direction: column;
+    }
+
+    .container-article {
+        flex-direction: column;
+        gap:1rem;
+    }
+
+    .container-article img {
+        width: 100%;
+        height: auto;
+    }
+}
