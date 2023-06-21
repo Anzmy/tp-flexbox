@@ -80,6 +80,10 @@ aside {
     align-items: center;
 }
 
+.container-article p {
+    background-color: #c0b15f;
+}
+
 .container-list {
     padding: 5% 2rem;
     width: 20%;
@@ -90,7 +94,7 @@ aside {
     height: 150px;
 }
 
-.container-list ul:nth-child(:last-child){
+.container-list ul:last-of-type{
     margin-bottom: 0px;
 }
 
@@ -107,10 +111,8 @@ aside {
     }
 
     .container-pics {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 0.5rem;
+        width: 50%;
+        gap: 2.5rem;
     }
 
     .container-middle  {
@@ -119,32 +121,40 @@ aside {
     }
 
     .container-list {
-        width: 100%;
+        width: 50%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
-        gap: 0.5rem;
+        gap: 2.5rem;
     }
 
     .container-list ul {
-        width: 28%;
-    }
-}
-
-@media screen and (max-width: 855px) {
-    .container-pics {
-        flex-direction: column;
-    }
-
-    .container-pics img {
-        width: 75%;
-        height: auto;
+        margin-bottom: 0;
     }
 }
 
 @media screen and (max-width: 531px) {
     .container-list {
-        flex-direction: column;
+        width: 100%;
+        flex-direction: row;
+        gap: 1rem;
+        height: 30rem;
+        overflow: auto;
+        background-color: #c0b15f;
+    }
+
+    .container-pics {
+        width: 100%;
+        gap: 2.5rem;
+        padding: 5rem 10%;
+    }
+
+    .container-pics img {
+        width: 100%;
+    }
+
+    .container-list ul {
+        width:20%;
     }
 
     .container-article {
@@ -154,6 +164,6 @@ aside {
 
     .container-article img {
         width: 100%;
-        height: auto;
+        height: 16rem;
     }
 }
